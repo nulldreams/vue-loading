@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="loading-box" v-bind:class="directionStyle">
+    <div class="loading-box" v-bind:class="this.directionStyle">
       <div class="container-box shadow">
         <div class="message">
           <p>Loading...</p>
@@ -43,12 +43,12 @@
   position: fixed;
 }
 .container-box {
-  background: #f5f6fa;
+  background: #fff;
 
   width: 500px;
   height: 150px;
 
-  border-radius: .25em;
+  border-radius: .50em;
 
   display: flex;
   flex-direction: row;
