@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+.bottom-right {
+  bottom: 0 !important;
+  right: 0 !important;
+  padding: 50px;
+}
+.bottom-left {
+  bottom: 0 !important;
+  left: 0 !important;
+  padding: 50px;
+}
+.top-right {
+  top: 0 !important;
+  right: 0 !important;
+  padding: 50px;
+}
+.top-right {
+  top: 0 !important;
+  right: 0 !important;
+  padding: 50px;
+}
+
+.shadow {
+  -webkit-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1) !important;
+  box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1) !important;
+}
