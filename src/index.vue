@@ -48,7 +48,7 @@
         </div>
       </div>
       <!-- <div class="codigo">
-          <pre><code>&lt;vue-loader :direction=&quot;direcao&quot; :image=&quot;gif&quot; :text=&quot;texto&quot; text-color=&quot;#786fa6&quot;/&gt;</code></pre>
+          <pre><code class="html">&lt;vue-loader :direction=&quot;direcao&quot; :image=&quot;gif&quot; :text=&quot;texto&quot; text-color=&quot;#786fa6&quot;/&gt;</code></pre>
         </div> -->
       <vue-loader :direction="direcao" :image="gif" :text="texto" text-color="#786fa6" />
     </div>
@@ -62,7 +62,7 @@
       </div>
       <div class="example__code">
         <div class="code">
-          <pre><code>&lt;loader :color=&quot;'#cf6a87'&quot; :borderWidth=&quot;5&quot; :duration=&quot;1.5&quot; :size=&quot;25&quot; :background=&quot;'#f5cd79'&quot;/&gt;</code></pre>
+          <pre><code class="html">&lt;loader :color=&quot;'#cf6a87'&quot; :borderWidth=&quot;5&quot; :duration=&quot;1.5&quot; :size=&quot;25&quot; :background=&quot;'#f5cd79'&quot;/&gt;</code></pre>
         </div>
       </div>
     </div>
@@ -72,7 +72,7 @@
         <loader :color="'#f5cd79'" :borderWidth="10" :duration="1" :size="70" :background="'#778beb'" />
       </div>
       <div class="example__code">
-        <pre><code>&lt;loader :color=&quot;'#f5cd79'&quot; :borderWidth=&quot;10&quot; :duration=&quot;1&quot; :size=&quot;70&quot; :background=&quot;'#778beb'&quot;/&gt;</code></pre>
+        <pre><code class="html">&lt;loader :color=&quot;'#f5cd79'&quot; :borderWidth=&quot;10&quot; :duration=&quot;1&quot; :size=&quot;70&quot; :background=&quot;'#778beb'&quot;/&gt;</code></pre>
       </div>
     </div>
 
@@ -81,7 +81,7 @@
         <loader :color="'#778beb'" :borderWidth="20" :duration=".5" :size="100" :background="'#cf6a87'" />
       </div>
       <div class="example__code">
-        <pre><code>&lt;loader :color=&quot;'#778beb'&quot; :borderWidth=&quot;20&quot; :duration=&quot;.5&quot; :size=&quot;100&quot; :background=&quot;'#cf6a87'&quot; /&gt;</code></pre>
+        <pre><code class="html">&lt;loader :color=&quot;'#778beb'&quot; :borderWidth=&quot;20&quot; :duration=&quot;.5&quot; :size=&quot;100&quot; :background=&quot;'#cf6a87'&quot; /&gt;</code></pre>
       </div>
     </div>
 
@@ -90,7 +90,7 @@
         <loader-dots :color="'#f5cd79'" :background="'#ea8685'" :duration="1" :size="15" />
       </div>
       <div class="example__code">
-        <pre><code>&lt;loader-dots :color=&quot;'#f5cd79'&quot; :background=&quot;'#ea8685'&quot; :duration=&quot;1&quot; :size=&quot;15&quot; /&gt;</code></pre>
+        <pre><code class="html">&lt;loader-dots :color=&quot;'#f5cd79'&quot; :background=&quot;'#ea8685'&quot; :duration=&quot;1&quot; :size=&quot;15&quot; /&gt;</code></pre>
       </div>
     </div>
 
@@ -122,10 +122,22 @@ export default {
       // this.direcao = direction
       this.direcao = 'top-right'
     }
+  },
+  created () {
+    $(function () {
+      hljs.configure({useBR: true})
+
+      $('pre code').each(function(i, block) {
+        hljs.highlightBlock(block)
+      })
+    })
   }
 }
 </script>
 
 <style lang="scss">
 @import './src/assets/css/main.scss';
+</style>
+<style>
+@import './assets/css/dracula.css';
 </style>

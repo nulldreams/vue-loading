@@ -207,14 +207,23 @@ body {
 }
 
 pre {
-  background: rgba(0,0,0,.4);
-  color: #fff;
+  background: #282a36;
+  color: #fff !important;
   width: 90%;
-  max-width: 600px;
+  max-width: 800px;
   overflow: auto;
   padding: 10px;
   box-sizing: border-box;
   border-radius: 4px;
   margin: 0 auto;
   padding: 20px;
+
+  text-align: center;
+}
+
+.hljs-name {
+  color: #ff79c6 !important;
+}
+.hljs-attr {  
+  color: rgb(101, 252, 0) !important;
 }
