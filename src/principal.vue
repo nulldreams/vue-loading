@@ -54,6 +54,10 @@ export default {
 </script>
 
 <style>
+a {
+  text-decoration: none;
+}
+
 .codigo {
   display: flex;
   justify-content: center;
