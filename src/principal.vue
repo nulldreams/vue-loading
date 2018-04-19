@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="title">
-      <h1>vue-loading</h1>
+      <a href="https://github.com/nulldreams/vue-loading" target="_blank"><h1>vue-loading</h1></a>
     </div>
     <div class="inputs">
       <div class="input">
