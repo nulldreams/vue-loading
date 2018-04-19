@@ -1,12 +1,13 @@
 <template>
   <div>
-    <div class="loading-box" v-bind:class="this.directionStyle">
+    <div class="loading-box" :class="classObject">
+    <!-- <div class="loading-box top"> -->
       <div class="container-box shadow">
         <div class="message">
-          <p>Loading...</p>
+          <p :style="textStyle">{{text}}</p>
         </div>
         <div class="image">
-          <img src="https://loading.io/spinners/coolors/lg.palette-rotating-ring-loader.gif" alt="">
+          <img :src="image" alt="">
         </div>
       </div>
     </div>
@@ -19,19 +20,40 @@
     props: {
       direction: String,
       image: String,
-      background: String
+      background: String,
+      text: String,
+      textColor: String
     },
-    data: {
-      directionStyle: {
-        'bottom-right': true,
-        'bottom-left': false,
-        'top-right': false,
-        'top-left': false
+    data () {
+      return {
+        directionStyle: {
+          'bottom-right': false,
+          'bottom-left': false,
+          'top-right': false,
+          'top-left': false,
+          'middle-right': false,
+          'middle-left': false,
+          'middle': false,
+          'bottom': false,
+          'top': false
+        }
       }
     },
+    watch: {
+      direction: function (newVal, oldVal) {
+        this.directionStyle[oldVal] = false
+        this.directionStyle[newVal] = true
+      }
+    },
+    mounted () {
+      this.directionStyle[this.direction] = true
+    },
     computed: {
-      backgroundStyle () {
-        return `background: ${this.direction}`
+      textStyle () {
+        return `color: ${this.textColor} !important;`
+      },
+      classObject: function (direcion) {
+        return this.directionStyle
       }
     }
   }
@@ -57,9 +79,9 @@
 }
 .container-box .message {
   /* max-width: 50%; */
-  width: 200px;
+  width: 300px;
   height: 50px;
-  margin: 50px;
+  /* margin: 50px; */
 
   color: #777;
   font-size: 30px;
@@ -70,7 +92,7 @@
 }
 .container-box .message p {
   font-family: 'Nunito', sans-serif;
-  max-width: 50%;
+  max-width: 100%;
 }
 .container-box .image {
   width: 100px;
