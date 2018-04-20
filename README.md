@@ -1,4 +1,4 @@
-# vue-loading
+# vue2-loading
 
 > A Vue.js project
 
