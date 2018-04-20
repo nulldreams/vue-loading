@@ -1,4 +1,4 @@
-<p style="text-align: center;">
+<p class="center">
   <img src="./logo.png">
 </p>
 <h4 align="center">A Vue2 loader</h4>
