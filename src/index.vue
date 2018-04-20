@@ -5,7 +5,7 @@
     <div class="header">
       <div class="header__block">
         <div class="title">
-          <a href="https://github.com/nulldreams/vue-loading" target="_blank"><h1>vue-loading</h1></a>
+          <a href="https://github.com/nulldreams/vue2-loading" target="_blank"><h1>vue2-loading</h1></a>
         </div>
 
         <div class="inputs">
