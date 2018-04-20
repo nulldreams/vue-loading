@@ -1,9 +1,9 @@
 {
-  "name": "vue2-loading",
-  "version": "1.0.0",
-  "description": "A Vue.js project",
+  "name": "@nulldreams/vue-loading",
+  "version": "0.0.1",
+  "description": "A Vue.js loader",
   "author": "Igor Souza Martins <nulldreams@gmail.com>",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",

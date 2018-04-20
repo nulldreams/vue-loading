@@ -1,23 +1,25 @@
-# vue2-loading
+<p align="center">
+  <img src="./logo.pnh" alt="Size Limit example"
+       width="20%" height="20%">
+</p>
+<h4 align="center">A Vue2 loader</h4>
+<p align="center">
+  <a href="https://gitter.im/simple-apis/vue-loader"><img src="https://img.shields.io/badge/gitter-join%20chat%20%E2%86%92-brightgreen.svg"></a>
+	
+  <a href="https://saythanks.io/to/nulldreams">
+      <img src="https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg">
+  </a>  
+	
+  <a href="https://github.com/nulldreams/vue-loader/issues">
+      <img src="https://img.shields.io/codeclimate/issues/github/me-and/mdf.svg">
+  </a>
 
-> A Vue.js project
-
-![alt](./gif.gif)
-
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+  <a href="http://makeapullrequest.com">
+      <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square">
+  </a>
+</p>
+<p align="center">
+  <a href="#routes">Routes</a> •
+  <a href="#how-to-use">How To Use</a> •
+  <a href="#credits">Credits</a> •
+</p>
