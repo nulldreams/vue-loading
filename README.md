@@ -11,10 +11,12 @@
   <a href="http://makeapullrequest.com">
       <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square">
   </a>
+    
 </p>
 <p align="center">
   <a href="#install">Install</a> •
   <a href="#how-to-use">How To Use</a> •
+  <a href="https://madewithvuejs.com/vue-loading">Made With Vue</a> •
 </p>
 
 ## Install
