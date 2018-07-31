@@ -16,7 +16,7 @@
 <p align="center">
   <a href="#install">Install</a> •
   <a href="#how-to-use">How To Use</a> •
-  <a href="https://madewithvuejs.com/vue-loading">Made With Vue</a> •
+  <a href="https://madewithvuejs.com/vue-loading">Made With VueJS</a> •
 </p>
 
 ## Install
