@@ -4,9 +4,7 @@
 <h4 align="center">A Vue2 loader</h4>
 <p align="center">
 	
-  <a href="https://github.com/nulldreams/vue-loading/issues">
-      <img src="https://img.shields.io/codeclimate/issues/github/me-and/mdf.svg">
-  </a>
+  <a title="MadeWithVueJs.com Shield" href="https://madewithvuejs.com/p/vue-loading/shield-link"> <img src="https://madewithvuejs.com/storage/repo-shields/640-shield.svg"/></a>
 
   <a href="http://makeapullrequest.com">
       <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square">
